@@ -1,0 +1,370 @@
+{% doc %}
+  @prompt
+    I WANT BENEFITS TABLE 3 COLUMNS 4 ROWNS IN THIS COLORS #199cd7 & #1e2d57, REMOVE THIS COLOR #1e2d57
+    
+    
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-benefits-table-{{ ai_gen_id }} {
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    display: block;
+  }
+
+  .ai-benefits-table-wrapper-{{ ai_gen_id }} {
+    overflow-x: auto;
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-benefits-table-element-{{ ai_gen_id }} {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: {{ block.settings.table_background }};
+  }
+
+  .ai-benefits-table-element-{{ ai_gen_id }} th {
+    background-color: {{ block.settings.header_background }};
+    color: {{ block.settings.header_text_color }};
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: {{ block.settings.text_alignment }};
+    font-size: {{ block.settings.header_font_size }}px;
+    font-weight: 600;
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+  }
+
+  .ai-benefits-table-element-{{ ai_gen_id }} td {
+    padding: {{ block.settings.cell_padding }}px;
+    text-align: {{ block.settings.text_alignment }};
+    font-size: {{ block.settings.cell_font_size }}px;
+    border: {{ block.settings.border_width }}px solid {{ block.settings.border_color }};
+    color: {{ block.settings.cell_text_color }};
+  }
+
+  .ai-benefits-table-element-{{ ai_gen_id }} tbody tr:nth-child(odd) td {
+    background-color: {{ block.settings.row_odd_background }};
+  }
+
+  .ai-benefits-table-element-{{ ai_gen_id }} tbody tr:nth-child(even) td {
+    background-color: {{ block.settings.row_even_background }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-benefits-table-element-{{ ai_gen_id }} th,
+    .ai-benefits-table-element-{{ ai_gen_id }} td {
+      padding: {{ block.settings.cell_padding | times: 0.7 }}px;
+      font-size: {{ block.settings.cell_font_size | times: 0.9 }}px;
+    }
+
+    .ai-benefits-table-element-{{ ai_gen_id }} th {
+      font-size: {{ block.settings.header_font_size | times: 0.9 }}px;
+    }
+  }
+{% endstyle %}
+
+<benefits-table-{{ ai_gen_id }} class="ai-benefits-table-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-benefits-table-wrapper-{{ ai_gen_id }}">
+    <table class="ai-benefits-table-element-{{ ai_gen_id }}">
+      <thead>
+        <tr>
+          <th>{{ block.settings.header_col_1 }}</th>
+          <th>{{ block.settings.header_col_2 }}</th>
+          <th>{{ block.settings.header_col_3 }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ block.settings.row_1_col_1 }}</td>
+          <td>{{ block.settings.row_1_col_2 }}</td>
+          <td>{{ block.settings.row_1_col_3 }}</td>
+        </tr>
+        <tr>
+          <td>{{ block.settings.row_2_col_1 }}</td>
+          <td>{{ block.settings.row_2_col_2 }}</td>
+          <td>{{ block.settings.row_2_col_3 }}</td>
+        </tr>
+        <tr>
+          <td>{{ block.settings.row_3_col_1 }}</td>
+          <td>{{ block.settings.row_3_col_2 }}</td>
+          <td>{{ block.settings.row_3_col_3 }}</td>
+        </tr>
+        <tr>
+          <td>{{ block.settings.row_4_col_1 }}</td>
+          <td>{{ block.settings.row_4_col_2 }}</td>
+          <td>{{ block.settings.row_4_col_3 }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</benefits-table-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class BenefitsTable{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.style.display = 'block';
+      }
+    }
+
+    customElements.define('benefits-table-{{ ai_gen_id }}', BenefitsTable{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Benefits table",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Table headers"
+    },
+    {
+      "type": "text",
+      "id": "header_col_1",
+      "label": "Column 1 header",
+      "default": "Feature"
+    },
+    {
+      "type": "text",
+      "id": "header_col_2",
+      "label": "Column 2 header",
+      "default": "Benefit"
+    },
+    {
+      "type": "text",
+      "id": "header_col_3",
+      "label": "Column 3 header",
+      "default": "Details"
+    },
+    {
+      "type": "header",
+      "content": "Row 1"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_1",
+      "label": "Column 1",
+      "default": "Quality materials"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_2",
+      "label": "Column 2",
+      "default": "Long-lasting durability"
+    },
+    {
+      "type": "text",
+      "id": "row_1_col_3",
+      "label": "Column 3",
+      "default": "Premium construction"
+    },
+    {
+      "type": "header",
+      "content": "Row 2"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_1",
+      "label": "Column 1",
+      "default": "Fast shipping"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_2",
+      "label": "Column 2",
+      "default": "Quick delivery"
+    },
+    {
+      "type": "text",
+      "id": "row_2_col_3",
+      "label": "Column 3",
+      "default": "2-3 business days"
+    },
+    {
+      "type": "header",
+      "content": "Row 3"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_1",
+      "label": "Column 1",
+      "default": "Easy returns"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_2",
+      "label": "Column 2",
+      "default": "Hassle-free process"
+    },
+    {
+      "type": "text",
+      "id": "row_3_col_3",
+      "label": "Column 3",
+      "default": "30-day guarantee"
+    },
+    {
+      "type": "header",
+      "content": "Row 4"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_1",
+      "label": "Column 1",
+      "default": "Customer support"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_2",
+      "label": "Column 2",
+      "default": "Expert assistance"
+    },
+    {
+      "type": "text",
+      "id": "row_4_col_3",
+      "label": "Column 3",
+      "default": "24/7 availability"
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "header_background",
+      "label": "Header background",
+      "default": "#199cd7"
+    },
+    {
+      "type": "color",
+      "id": "header_text_color",
+      "label": "Header text",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "row_odd_background",
+      "label": "Odd row background",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "color",
+      "id": "row_even_background",
+      "label": "Even row background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "cell_text_color",
+      "label": "Cell text",
+      "default": "#212326"
+    },
+    {
+      "type": "color",
+      "id": "border_color",
+      "label": "Border",
+      "default": "#d2d5d9"
+    },
+    {
+      "type": "color",
+      "id": "table_background",
+      "label": "Table background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "header_font_size",
+      "label": "Header font size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "cell_font_size",
+      "label": "Cell font size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "cell_padding",
+      "label": "Cell padding",
+      "min": 8,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "label": "Border width",
+      "min": 0,
+      "max": 4,
+      "step": 1,
+      "unit": "px",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 20,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "left"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Benefits table"
+    }
+  ]
+}
+{% endschema %}

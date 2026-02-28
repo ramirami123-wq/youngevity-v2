@@ -1,0 +1,302 @@
+{% doc %}
+  @prompt
+    i want gif, many gifs not only one, putonly 4 ggifs and make them in a animated way
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-gif-gallery-{{ ai_gen_id }} {
+    display: block;
+    width: {{ block.settings.desktop_width_percent }}%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .ai-gif-gallery-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+    gap: {{ block.settings.gap }}px;
+  }
+
+  .ai-gif-item-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    border-radius: {{ block.settings.border_radius }}px;
+    overflow: hidden;
+    box-shadow: {{ block.settings.shadow_horizontal }}px {{ block.settings.shadow_vertical }}px {{ block.settings.shadow_blur }}px rgba(0, 0, 0, {{ block.settings.shadow_opacity }});
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .ai-gif-item-{{ ai_gen_id }}:hover {
+    transform: scale({{ block.settings.hover_scale }});
+    box-shadow: {{ block.settings.shadow_horizontal | times: 2 }}px {{ block.settings.shadow_vertical | times: 2 }}px {{ block.settings.shadow_blur | times: 1.5 }}px rgba(0, 0, 0, {{ block.settings.shadow_opacity | times: 1.5 }});
+  }
+
+  .ai-gif-item-{{ ai_gen_id }}:nth-child(1) {
+    animation: ai-gif-float-{{ ai_gen_id }} 3s ease-in-out infinite;
+  }
+
+  .ai-gif-item-{{ ai_gen_id }}:nth-child(2) {
+    animation: ai-gif-float-{{ ai_gen_id }} 3s ease-in-out infinite 0.5s;
+  }
+
+  .ai-gif-item-{{ ai_gen_id }}:nth-child(3) {
+    animation: ai-gif-float-{{ ai_gen_id }} 3s ease-in-out infinite 1s;
+  }
+
+  .ai-gif-item-{{ ai_gen_id }}:nth-child(4) {
+    animation: ai-gif-float-{{ ai_gen_id }} 3s ease-in-out infinite 1.5s;
+  }
+
+  @keyframes ai-gif-float-{{ ai_gen_id }} {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+  .ai-gif-item-{{ ai_gen_id }}:hover {
+    animation-play-state: paused;
+  }
+
+  .ai-gif-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-gif-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: {{ block.settings.placeholder_bg_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+
+  .ai-gif-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-gif-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-gif-gallery-{{ ai_gen_id }} {
+      width: 100%;
+    }
+
+    .ai-gif-gallery-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+    }
+  }
+{% endstyle %}
+
+<div class="ai-gif-gallery-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  <div class="ai-gif-gallery-grid-{{ ai_gen_id }}">
+    {% for i in (1..4) %}
+      {% liquid
+        assign gif_key = 'gif_' | append: i
+        assign gif = block.settings[gif_key]
+      %}
+      
+      <div class="ai-gif-item-{{ ai_gen_id }}">
+        {% if gif %}
+          <img
+            src="{{ gif | image_url }}"
+            alt="{{ gif.alt | escape }}"
+            class="ai-gif-image-{{ ai_gen_id }}"
+            loading="lazy"
+            width="{{ gif.width }}"
+            height="{{ gif.height }}"
+          >
+        {% else %}
+          <div class="ai-gif-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-gif-empty-state-{{ ai_gen_id }}">
+              Add GIF {{ i }}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Animated GIF gallery",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "2"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "label": "Gap between items",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    },
+    {
+      "type": "header",
+      "content": "GIF images"
+    },
+    {
+      "type": "image_picker",
+      "id": "gif_1",
+      "label": "GIF 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "gif_2",
+      "label": "GIF 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "gif_3",
+      "label": "GIF 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "gif_4",
+      "label": "GIF 4"
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "hover_scale",
+      "label": "Hover scale",
+      "min": 1,
+      "max": 1.5,
+      "step": 0.1,
+      "default": 1.1
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "label": "Border radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "default": 8
+    },
+    {
+      "type": "color",
+      "id": "placeholder_bg_color",
+      "label": "Placeholder background",
+      "default": "#f3f3f3"
+    },
+    {
+      "type": "header",
+      "content": "Shadow"
+    },
+    {
+      "type": "range",
+      "id": "shadow_horizontal",
+      "label": "Horizontal offset",
+      "min": -12,
+      "max": 12,
+      "step": 2,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "shadow_vertical",
+      "label": "Vertical offset",
+      "min": -12,
+      "max": 12,
+      "step": 2,
+      "unit": "px",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "shadow_blur",
+      "label": "Blur",
+      "min": 0,
+      "max": 40,
+      "step": 4,
+      "unit": "px",
+      "default": 12
+    },
+    {
+      "type": "range",
+      "id": "shadow_opacity",
+      "label": "Shadow opacity",
+      "min": 0,
+      "max": 1,
+      "step": 0.1,
+      "default": 0.2
+    }
+  ],
+  "presets": [
+    {
+      "name": "Animated GIF gallery"
+    }
+  ]
+}
+{% endschema %}
