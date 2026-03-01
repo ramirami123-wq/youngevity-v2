@@ -1,1 +1,351 @@
-{"sections":{"slideshow":{"type":"slideshow","blocks":{"slide-2":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/ASDSD.png","image_position":"center center","text_box_position":"bottom-right","subheading":"","subheading_size":"h5","heading":"","heading_size":"h0","heading_tag":"h2","text":"","text_size":"typeset2","button_label":"","button_link":"","button_size":"medium","button_style_secondary":false}}},"block_order":["slide-2"],"settings":{"slideshow_type":"legacy","text_alignment":"left","image_ratio":"100vh","autorotate":false,"autorotate_speed":5,"full_width":true,"image_behavior":"none","mobile_text_alignment":"left","mobile_image_ratio":"adapt_first","show_text_below":false,"colors_button_label":"#1a1b18","colors_button_background":"#ffffff","colors_text":"#ffffff","colors_background":"#ffffff","colors_overlay":"#1a1b18","colors_overlay_opacity":16,"colors_navigation_text":"#ffffff","colors_navigation_background":"#1a1b18","padding_top":0,"padding_bottom":36}},"featured_product_RCYCaB":{"type":"featured-product","blocks":{"title_7PbUaC":{"type":"title","settings":{"title_size":"h2","title_tag":"h2","show_price":false,"price_size":"medium"}},"rating_AN8Hkq":{"type":"rating","settings":{}},"price_7c3cKU":{"type":"price","settings":{"price_size":"medium","show_badges":true,"sale_badge_basis":"percentage"}},"custom_liquid_9wDUPc":{"type":"custom_liquid","settings":{"custom_liquid":"<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">✨ Cordless & Rechargeable<\/span> – Style your hair anywhere without needing an outlet.<br><br>\n\n<span style=\"font-weight: bold;\">🔥 Fast, Even Heating<\/span> –  Advanced ceramic technology smooths hair quickly with less frizz.<br><br>\n\n<span style=\"font-weight: bold;\">🌡️ Adjustable Heat Settings<\/span> – Suitable for fine, thick, curly, or treated hair.<br><br>\n\n<span style=\"font-weight: bold;\">💫 Smooth, Tangle-Free Results<\/span> –  Glides gently through hair for a sleek, shiny finish.\n\n<\/div>"}},"variant_picker_txHV9a":{"type":"variant_picker","settings":{"show_variant_labels":true,"picker_type":"button","enable_color_swatches":true,"swatches_source":"file","swatch_type":"round","enable_swatch_cross":true,"enable_swatch_unavailable_click":false,"size_chart":""}},"buy_buttons_jtWcw8":{"type":"buy_buttons","settings":{"show_quantity_selector":true,"show_dynamic_checkout":false,"show_gift_card_recipient":false}}},"block_order":["title_7PbUaC","rating_AN8Hkq","price_7c3cKU","custom_liquid_9wDUPc","variant_picker_txHV9a","buy_buttons_jtWcw8"],"name":"t:sections.featured-product.presets.name","settings":{"product":"markiti-wireless-hair-straightener-brush","layout":"media_first","full_width":false,"show_divider":false,"show_featured_media":false,"hide_variants":false,"enable_image_zoom":false,"enable_video_looping":false,"image_ratio":"adapt_first","image_position":"center center","enable_layered_images":false,"padding_top":36,"padding_bottom":36}},"scrolling_promotion_gqQrxK":{"type":"scrolling-promotion","blocks":{"announcement_V6HCmb":{"type":"announcement","settings":{"icon":"none","icon_size":"medium","custom_icon":"","text":"MARKITI","text_size":20,"link":""}}},"block_order":["announcement_V6HCmb"],"name":"t:sections.scrolling-promotion.presets.name","settings":{"direction":"left","speed":1.6,"show_divider":false,"use_custom_colors":true,"colors_icon":"#ffffff","colors_text":"#ffffff","colors_background":"#189ddd","gradient_background":"","padding_top":20,"padding_bottom":20}},"rich_text_iPTEGL":{"type":"rich-text","blocks":{"heading_NEyD4Q":{"type":"heading","settings":{"heading":"AT MARKITI","heading_size":"h1","heading_tag":"h2"}},"text_z3jQfd":{"type":"text","settings":{"text":"<p>We believe great hair should be effortless — anytime, anywhere. Our mission is to create innovative, high-quality styling tools that fit modern, on-the-go lifestyles. We combine advanced technology, sleek design, and reliable performance to help you look and feel your best without the hassle of cords or complicated routines.<\/p><p>Focused on convenience, portability, and salon-quality results, our products are designed for busy mornings, travel days, and everything in between. With Couture Hair Pro, smooth, beautiful hair is always within reach.<\/p>","text_size":"typeset2","secondary_color":false,"highlight_phrases":"","highlight_style":"marker"}}},"block_order":["heading_NEyD4Q","text_z3jQfd"],"name":"t:sections.rich-text.presets.name","settings":{"text_alignment":"left","mobile_text_alignment":"left","horizontal_content":false,"narrow":false,"show_divider":false,"use_custom_colors":false,"colors_button_label":"#ffffff","colors_button_background":"#1a1b18","colors_text":"#212326","colors_background":"#ffffff","colors_highlight":"#bbff00","gradient_background":"","padding_top":36,"padding_bottom":36}},"scrolling_promotion_yJEgih":{"type":"scrolling-promotion","blocks":{"announcement_pGUAFw":{"type":"announcement","settings":{"icon":"none","icon_size":"medium","custom_icon":"","text":"WELCOME TO MARKITI","text_size":20,"link":""}}},"block_order":["announcement_pGUAFw"],"name":"t:sections.scrolling-promotion.presets.name","settings":{"direction":"left","speed":1.6,"show_divider":false,"use_custom_colors":true,"colors_icon":"#ffffff","colors_text":"#ffffff","colors_background":"#189ddd","gradient_background":"","padding_top":20,"padding_bottom":20}},"faq_VkHiGm":{"type":"faq","blocks":{"question_yNkDQY":{"type":"question","settings":{"title":"How long does the battery last","text":"<p>The built-in 9600mAh battery provides multiple styling sessions on a full charge, depending on the heat setting and hair type<\/p>"}},"question_YmRBPG":{"type":"question","settings":{"title":"How long does it take to heat up?","text":"<p>The brush heats up quickly in just a few minutes, so you can start styling almost immediately.<\/p>"}},"question_9WMfD8":{"type":"question","settings":{"title":"Can it be used on all hair types?","text":"<p>Yes! It features multiple heat settings suitable for fine, thick, curly, and color-treated hair<\/p>"}},"question_8XRAQn":{"type":"question","settings":{"title":"Will it damage my hair?","text":"<p>The ceramic heating technology distributes heat evenly to help reduce frizz, pulling, and breakage when used correctly.<\/p>"}}},"block_order":["question_yNkDQY","question_YmRBPG","question_9WMfD8","question_8XRAQn"],"name":"t:sections.faq.presets.name","settings":{"narrow":false,"secondary_background":false,"show_divider":false,"heading":"FAQs","heading_size":"h1","heading_alignment":"left","heading_tag":"h2","padding_top":36,"padding_bottom":36}},"guarantees_QbnCCW":{"type":"guarantees","blocks":{"guarantee_ej4aWF":{"type":"guarantee","settings":{"icon":"truck","icon_size":"medium","custom_icon":"","title":"Delivery all over lebanon","title_size":"h3","text":""}},"guarantee_g6xKng":{"type":"guarantee","settings":{"icon":"chat_bubble","icon_size":"medium","custom_icon":"","title":"24\/7 support","title_size":"h3","text":""}}},"block_order":["guarantee_ej4aWF","guarantee_g6xKng"],"name":"t:sections.guarantees.presets.name","settings":{"layout":"default","column_alignment":"left","horizontal_content":false,"full_width":false,"show_divider":false,"columns_desktop":4,"heading":"Guarantees","heading_size":"h1","heading_tag":"h2","columns_mobile":"1","swipe_on_mobile":true,"use_custom_colors":false,"colors_icon":"#ffffff","colors_text":"#1a1b18","colors_background":"#ffffff","gradient_background":"","padding_top":36,"padding_bottom":36}}},"order":["slideshow","featured_product_RCYCaB","scrolling_promotion_gqQrxK","rich_text_iPTEGL","scrolling_promotion_yJEgih","faq_VkHiGm","guarantees_QbnCCW"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Captu456456456re.png",
+            "image_position": "center center",
+            "text_box_position": "bottom-right",
+            "subheading": "",
+            "subheading_size": "h5",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_tag": "h2",
+            "text": "",
+            "text_size": "typeset2",
+            "button_label": "",
+            "button_link": "",
+            "button_size": "medium",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "slide-2"
+      ],
+      "settings": {
+        "slideshow_type": "legacy",
+        "text_alignment": "left",
+        "image_ratio": "100vh",
+        "autorotate": false,
+        "autorotate_speed": 5,
+        "full_width": true,
+        "image_behavior": "none",
+        "mobile_text_alignment": "left",
+        "mobile_image_ratio": "adapt_first",
+        "show_text_below": false,
+        "colors_button_label": "#1a1b18",
+        "colors_button_background": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#ffffff",
+        "colors_overlay": "#1a1b18",
+        "colors_overlay_opacity": 16,
+        "colors_navigation_text": "#ffffff",
+        "colors_navigation_background": "#1a1b18",
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured_product_RCYCaB": {
+      "type": "featured-product",
+      "blocks": {
+        "title_7PbUaC": {
+          "type": "title",
+          "settings": {
+            "title_size": "h2",
+            "title_tag": "h2",
+            "show_price": false,
+            "price_size": "medium"
+          }
+        },
+        "rating_AN8Hkq": {
+          "type": "rating",
+          "settings": {}
+        },
+        "price_7c3cKU": {
+          "type": "price",
+          "settings": {
+            "price_size": "medium",
+            "show_badges": true,
+            "sale_badge_basis": "percentage"
+          }
+        },
+        "custom_liquid_9wDUPc": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"padding: 12px; text-align: left; background-color: #f9f9f9; font-size: 15px; border-radius: 12px; margin-top: 10px; margin-bottom: 10px; line-height: 1.6;\">\n\n<span style=\"font-weight: bold;\">✨ High-Frequency Sonic Power</span> – Delivers up to 31,000 vibrations per minute to effectively remove plaque and tartar.<br><br>\n\n<span style=\"font-weight: bold;\">🔋 Cordless & Rechargeable</span> – Convenient USB charging for easy, portable use anytime, anywhere.<br><br>\n\n<span style=\"font-weight: bold;\">🦷 Multiple Cleaning Modes</span> – Adjustable settings designed for sensitive gums and deep cleaning needs.<br><br>\n\n<span style=\"font-weight: bold;\">💧 Waterproof & Easy to Clean</span> – Safe for use in the bathroom with a sleek, hygienic design.\n\n</div>"
+          }
+        },
+        "variant_picker_txHV9a": {
+          "type": "variant_picker",
+          "settings": {
+            "show_variant_labels": true,
+            "picker_type": "button",
+            "enable_color_swatches": true,
+            "swatches_source": "file",
+            "swatch_type": "round",
+            "enable_swatch_cross": true,
+            "enable_swatch_unavailable_click": false,
+            "size_chart": ""
+          }
+        },
+        "buy_buttons_jtWcw8": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        }
+      },
+      "block_order": [
+        "title_7PbUaC",
+        "rating_AN8Hkq",
+        "price_7c3cKU",
+        "custom_liquid_9wDUPc",
+        "variant_picker_txHV9a",
+        "buy_buttons_jtWcw8"
+      ],
+      "name": "t:sections.featured-product.presets.name",
+      "settings": {
+        "product": "electric-teeth-cleaner-2-in-1",
+        "layout": "media_first",
+        "full_width": false,
+        "show_divider": false,
+        "show_featured_media": false,
+        "hide_variants": false,
+        "enable_image_zoom": false,
+        "enable_video_looping": false,
+        "image_ratio": "adapt_first",
+        "image_position": "center center",
+        "enable_layered_images": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_promotion_gqQrxK": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "announcement_V6HCmb": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "Youngevity",
+            "text_size": 20,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_V6HCmb"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 1.6,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_icon": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#cb572a",
+        "gradient_background": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "rich_text_iPTEGL": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_NEyD4Q": {
+          "type": "heading",
+          "settings": {
+            "heading": "AT Youngevity",
+            "heading_size": "h1",
+            "heading_tag": "h2"
+          }
+        },
+        "text_z3jQfd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>we believe that confidence begins with a healthy smile. Our mission is to create innovative, easy-to-use oral care solutions that help you maintain professional-level hygiene from the comfort of your home.</p><p>We combine modern technology with thoughtful design to deliver products that are effective, safe, and convenient for everyday use. From powerful sonic cleaning to user-friendly features, every Youngevity product is crafted to support your journey toward better oral health.</p>",
+            "text_size": "typeset2",
+            "secondary_color": false,
+            "highlight_phrases": "",
+            "highlight_style": "marker"
+          }
+        }
+      },
+      "block_order": [
+        "heading_NEyD4Q",
+        "text_z3jQfd"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "text_alignment": "left",
+        "mobile_text_alignment": "left",
+        "horizontal_content": false,
+        "narrow": false,
+        "show_divider": false,
+        "use_custom_colors": false,
+        "colors_button_label": "#ffffff",
+        "colors_button_background": "#1a1b18",
+        "colors_text": "#212326",
+        "colors_background": "#ffffff",
+        "colors_highlight": "#bbff00",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "scrolling_promotion_yJEgih": {
+      "type": "scrolling-promotion",
+      "blocks": {
+        "announcement_pGUAFw": {
+          "type": "announcement",
+          "settings": {
+            "icon": "none",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "text": "WELCOME TO YOUNGEVITY",
+            "text_size": 20,
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement_pGUAFw"
+      ],
+      "name": "t:sections.scrolling-promotion.presets.name",
+      "settings": {
+        "direction": "left",
+        "speed": 1.6,
+        "show_divider": false,
+        "use_custom_colors": true,
+        "colors_icon": "#ffffff",
+        "colors_text": "#ffffff",
+        "colors_background": "#cb572a",
+        "gradient_background": "",
+        "padding_top": 20,
+        "padding_bottom": 20
+      }
+    },
+    "faq_VkHiGm": {
+      "type": "faq",
+      "blocks": {
+        "question_yNkDQY": {
+          "type": "question",
+          "settings": {
+            "title": "Is the Youngevity Sonic Dental Scaler safe to use at home?",
+            "text": "<p>Yes! The device is designed for safe at-home use. It features gentle yet powerful sonic vibrations and multiple modes to suit different sensitivity levels.</p>"
+          }
+        },
+        "question_YmRBPG": {
+          "type": "question",
+          "settings": {
+            "title": "Does it hurt to use?",
+            "text": "<p>When used correctly, it should not hurt. If you have sensitive gums, start with the lowest setting and gently guide the tip along your teeth.<br/></p>"
+          }
+        },
+        "question_9WMfD8": {
+          "type": "question",
+          "settings": {
+            "title": "Is it waterproof?",
+            "text": "<p>Yes, the Youngevity Sonic Dental Scaler is waterproof, making it safe for use in the bathroom and easy to clean after each use.<br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_yNkDQY",
+        "question_YmRBPG",
+        "question_9WMfD8"
+      ],
+      "name": "t:sections.faq.presets.name",
+      "settings": {
+        "narrow": false,
+        "secondary_background": false,
+        "show_divider": false,
+        "heading": "FAQs",
+        "heading_size": "h1",
+        "heading_alignment": "left",
+        "heading_tag": "h2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "guarantees_QbnCCW": {
+      "type": "guarantees",
+      "blocks": {
+        "guarantee_ej4aWF": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "truck",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "Delivery all over lebanon",
+            "title_size": "h3",
+            "text": ""
+          }
+        },
+        "guarantee_g6xKng": {
+          "type": "guarantee",
+          "settings": {
+            "icon": "chat_bubble",
+            "icon_size": "medium",
+            "custom_icon": "",
+            "title": "24/7 support",
+            "title_size": "h3",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "guarantee_ej4aWF",
+        "guarantee_g6xKng"
+      ],
+      "name": "t:sections.guarantees.presets.name",
+      "settings": {
+        "layout": "default",
+        "column_alignment": "left",
+        "horizontal_content": false,
+        "full_width": false,
+        "show_divider": false,
+        "columns_desktop": 4,
+        "heading": "Guarantees",
+        "heading_size": "h1",
+        "heading_tag": "h2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "use_custom_colors": false,
+        "colors_icon": "#ffffff",
+        "colors_text": "#1a1b18",
+        "colors_background": "#ffffff",
+        "gradient_background": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "featured_product_RCYCaB",
+    "scrolling_promotion_gqQrxK",
+    "rich_text_iPTEGL",
+    "scrolling_promotion_yJEgih",
+    "faq_VkHiGm",
+    "guarantees_QbnCCW"
+  ]
+}
